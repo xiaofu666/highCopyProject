@@ -1,0 +1,25 @@
+dependencies: \
+  /Users/kengsir/Desktop/yiluxiangxi/WRRecommendViewController.m \
+  /Users/kengsir/Desktop/yiluxiangxi/WRRecommendViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RcmdImageCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RcmSmallCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RcmLabelCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RcmLikeTabCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/Path.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RequestModel.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/UIImageView+WebCache.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageCompat.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManagerDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManager.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageDownloaderDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDImageCacheDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/WRRecHeaderView.h \
+  /Users/kengsir/Desktop/yiluxiangxi/WRRecFooterView.h \
+  /Users/kengsir/Desktop/yiluxiangxi/ADheadView.h \
+  /Users/kengsir/Desktop/yiluxiangxi/WRRecWebViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/WRAllSpecialViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/WRDiscountViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/yiluxiangxi/AppDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/Refresh_2014_8_6/MJRefresh.h \
+  /Users/kengsir/Desktop/yiluxiangxi/Refresh_2014_8_6/UIScrollView+MJRefresh.h

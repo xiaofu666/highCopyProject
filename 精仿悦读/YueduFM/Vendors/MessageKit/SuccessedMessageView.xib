@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-tN-Yhx">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.99607843137254903" green="0.95686274509803926" blue="0.73333333333333328" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="UgB-tN-Yhx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D8g-8s-5eP"/>
+                <constraint firstAttribute="trailing" secondItem="UgB-tN-Yhx" secondAttribute="trailing" id="MBt-pg-cSZ"/>
+                <constraint firstItem="UgB-tN-Yhx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SfO-Tg-niV"/>
+                <constraint firstAttribute="bottom" secondItem="UgB-tN-Yhx" secondAttribute="bottom" id="pwS-XW-E6h"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageLabel" destination="UgB-tN-Yhx" id="tKU-VA-uQw"/>
+            </connections>
+            <point key="canvasLocation" x="346" y="214.5"/>
+        </view>
+    </objects>
+</document>

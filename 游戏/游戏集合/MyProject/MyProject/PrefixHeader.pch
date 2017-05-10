@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  MyProject
+//
+//  Created by 小富 on 16/3/18.
+//  Copyright © 2016年 yunxiang. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "MyHelper.h"
+#import "SDWebImage/UIImageView+WebCache.h"
+#import "HBUserDefaults.h"
+#import "NetRequestManager.h"
+
+#define RedColor [UIColor colorWithRed:0.96 green:0.20 blue:0.40 alpha:1.0f]
+
+/*
+ __VA_ARGS__是一个可变参数的宏，很少人知道这个宏，这个可变参数的宏是新的C99规范中新增的，目前似乎只有gcc支（VC6.0的编译器不支持）。宏前面加上##的作用在于，当可变参数的个数为0时，这里的##起到把前面多余的","去掉的作用,否则会编译出错, 你可以试试。
+ 
+ __FILE__宏在预编译时会替换成当前的源文件名
+ 
+ 3.__LINE__宏在预编译时会替换成当前的行号
+ 
+ 4.__FUNCTION__宏在预编译时会替换成当前的函数名称
+ */
+#ifdef DEBUG
+# define SFLog(fmt, ...) NSLog((@"[文件名:%s]\n" "[函数名:%s]\n" "[行号:%d] \n" fmt), __FILE__, __FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+# define SFLog(...);
+#endif
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,24 @@
+//
+//  UIView+i7Rotate360.h
+//  include7 AG
+//
+//  Created by Jonas Schnelli on 01.12.10.
+//  Copyright 2010 include7 AG. All rights reserved.
+//
+
+
+
+enum i7Rotate360TimingMode {
+	i7Rotate360TimingModeEaseInEaseOut,
+	i7Rotate360TimingModeLinear
+};
+
+@interface UIView (i7Rotate360)
+- (void)rotate360WithDuration:(CGFloat)aDuration repeatCount:(CGFloat)aRepeatCount timingMode:(enum i7Rotate360TimingMode)aMode;
+- (void)rotate360WithDuration:(CGFloat)aDuration timingMode:(enum i7Rotate360TimingMode)aMode;
+- (void)rotate360WithDuration:(CGFloat)aDuration;
+@end
+
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com

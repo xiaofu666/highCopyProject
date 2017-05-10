@@ -1,0 +1,13 @@
+platform :ios, '8.0'
+use_frameworks!
+target 'ZFZhiHuDaily' do
+ pod 'SnapKit'
+ pod 'Alamofire'
+ pod 'SwiftyJSON'
+ pod 'FDFullscreenPopGesture'
+ pod 'NVActivityIndicatorView'
+ pod 'Kingfisher'
+ pod 'AwesomeCache'
+ pod 'SKPhotoBrowser'
+ pod 'RxSwift'
+end

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="69" id="2XY-Om-NHS" customClass="FavorActionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2XY-Om-NHS" id="hWG-xd-Odw">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uil-td-K8N" customClass="UIVButton">
+                        <rect key="frame" x="84" y="0.0" width="76.5" height="68.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68.5" id="kQ9-Gr-die"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="收藏" image="icon_action_favor.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="drf-1t-DxO" customClass="UIVButton">
+                        <rect key="frame" x="8" y="0.0" width="76" height="68.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68.5" id="5bb-oG-tdA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="详情" image="icon_action_info.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3G-xf-1aX" customClass="UIVButton">
+                        <rect key="frame" x="236" y="0.0" width="76" height="68.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68.5" id="A8T-cC-1eP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="分享" image="icon_action_share.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vjB-2F-TCi" customClass="UIVButton">
+                        <rect key="frame" x="160.5" y="0.0" width="75.5" height="68.5"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="68.5" id="Y23-PG-Dwu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="添加到" image="icon_action_add.png">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="uil-td-K8N" firstAttribute="width" secondItem="drf-1t-DxO" secondAttribute="width" id="13J-hx-o27"/>
+                    <constraint firstItem="S3G-xf-1aX" firstAttribute="width" secondItem="drf-1t-DxO" secondAttribute="width" id="3YL-XJ-FQ1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="vjB-2F-TCi" secondAttribute="bottom" constant="-8" id="5CK-SD-dAg"/>
+                    <constraint firstItem="drf-1t-DxO" firstAttribute="leading" secondItem="hWG-xd-Odw" secondAttribute="leadingMargin" id="HxR-VZ-yp8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="drf-1t-DxO" secondAttribute="bottom" constant="-8" id="LZa-0a-eBd"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="S3G-xf-1aX" secondAttribute="trailing" id="PLA-kF-5dH"/>
+                    <constraint firstItem="vjB-2F-TCi" firstAttribute="leading" secondItem="uil-td-K8N" secondAttribute="trailing" id="QjK-ka-Qbf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="S3G-xf-1aX" secondAttribute="bottom" constant="-8" id="SV3-5P-DIH"/>
+                    <constraint firstItem="drf-1t-DxO" firstAttribute="top" secondItem="hWG-xd-Odw" secondAttribute="topMargin" constant="-8" id="THX-fp-UBP"/>
+                    <constraint firstItem="S3G-xf-1aX" firstAttribute="leading" secondItem="vjB-2F-TCi" secondAttribute="trailing" id="XgR-vp-DrK"/>
+                    <constraint firstItem="S3G-xf-1aX" firstAttribute="top" secondItem="hWG-xd-Odw" secondAttribute="topMargin" constant="-8" id="cua-Nj-nOY"/>
+                    <constraint firstItem="vjB-2F-TCi" firstAttribute="width" secondItem="drf-1t-DxO" secondAttribute="width" id="do3-z2-qRf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="uil-td-K8N" secondAttribute="bottom" constant="-8" id="eFV-AF-rqn"/>
+                    <constraint firstItem="uil-td-K8N" firstAttribute="leading" secondItem="drf-1t-DxO" secondAttribute="trailing" id="iYD-Pp-IgL"/>
+                    <constraint firstItem="vjB-2F-TCi" firstAttribute="top" secondItem="hWG-xd-Odw" secondAttribute="topMargin" constant="-8" id="ike-hm-I6E"/>
+                    <constraint firstItem="uil-td-K8N" firstAttribute="top" secondItem="hWG-xd-Odw" secondAttribute="topMargin" constant="-8" id="vRa-iY-giv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="addButton" destination="vjB-2F-TCi" id="nGp-Wa-xcg"/>
+                <outlet property="detailButton" destination="drf-1t-DxO" id="XkI-pa-Dem"/>
+                <outlet property="favorButton" destination="uil-td-K8N" id="bgG-eu-l0e"/>
+                <outlet property="shareButton" destination="S3G-xf-1aX" id="cgY-Rm-iF4"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="342.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_action_add.png" width="35" height="30"/>
+        <image name="icon_action_favor.png" width="35" height="30"/>
+        <image name="icon_action_info.png" width="35" height="30"/>
+        <image name="icon_action_share.png" width="35" height="30"/>
+    </resources>
+</document>

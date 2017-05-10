@@ -1,0 +1,19 @@
+dependencies: \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/WRCommunityViewController.m \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/WRCommunityViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/yiluxiangxi/AppDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RequestModel.h \
+  /Users/kengsir/Desktop/yiluxiangxi/Path.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgView/WRCommunityCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgView/WRCommunityHeaderCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/UIImageView+WebCache.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageCompat.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManagerDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManager.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageDownloaderDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDImageCacheDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgView/WRCommunityHeaderView.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/WRCommunityDetailViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/WRCommunitySheQuWenDaViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/WRCommunityJieBanZuiXinJieBanViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/zgController/zgSCNavTabBar/ViewControllers/zgSCNavTabBarController.h

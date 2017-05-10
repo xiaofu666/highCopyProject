@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Voice</key>
+	<dict>
+		<!--语音压缩的码率。可选值包括4570/5150/5900/6700/7400/7950/10200/12200-->
+		<key>AudioEncodingBitRate</key>
+		<real>7950</real>
+	</dict>
+	<key>Image</key>
+	<dict>
+		<key>ImageQuality</key>
+		<real>0.85</real>
+		<key>ImageWidth</key>
+		<integer>960</integer>
+		<key>ImageHeight</key>
+		<integer>960</integer>
+	</dict>
+</dict>
+</plist>

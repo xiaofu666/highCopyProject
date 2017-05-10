@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "71604D31EFBDD430642B208D1CC272879784E152",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "7070BA961BCA286ED2393408B1E3D78393C99B33" : 0,
+    "71604D31EFBDD430642B208D1CC272879784E152" : 0,
+    "2F3281A67BE407F5403A47BBF1C1035AAC47E47A" : 0,
+    "EF51387A5AF28E4351AFB0302884600583A438B5" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "613B8BB6-79E9-49C2-A4B0-E7E05A8E9844",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "7070BA961BCA286ED2393408B1E3D78393C99B33" : "YueduFM\/YueduFM\/Vendors\/Reachability\/",
+    "71604D31EFBDD430642B208D1CC272879784E152" : "YueduFM\/",
+    "2F3281A67BE407F5403A47BBF1C1035AAC47E47A" : "YueduFM\/YueduFM\/Vendors\/EVCircularProgressView\/",
+    "EF51387A5AF28E4351AFB0302884600583A438B5" : "YueduFM\/YueduFM\/Vendors\/JSONKit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YueduFM",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YueduFM.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ejvaughan\/EVCircularProgressView",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2F3281A67BE407F5403A47BBF1C1035AAC47E47A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tonymillion\/Reachability",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7070BA961BCA286ED2393408B1E3D78393C99B33"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:yuedu-fm\/yuedu-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "71604D31EFBDD430642B208D1CC272879784E152"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/johnezang\/JSONKit",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EF51387A5AF28E4351AFB0302884600583A438B5"
+    }
+  ]
+}

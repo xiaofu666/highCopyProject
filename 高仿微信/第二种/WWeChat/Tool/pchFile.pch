@@ -1,0 +1,49 @@
+//
+//  PrefixHeader.pch
+//  WWeChat
+//
+//  Created by wordoor－z on 16/1/29.
+//  Copyright © 2016年 wzx. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//按比例获取高度
+#define  WGiveHeight(HEIGHT) HEIGHT * [UIScreen mainScreen].bounds.size.height/568.0
+
+//按比例获取宽度
+#define  WGiveWidth(WIDTH) WIDTH * [UIScreen mainScreen].bounds.size.width/320.0
+
+//RGB色值
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+//本地缓存
+//userID
+#define wUserID @"wUserId"
+
+//user类
+#define wUserClass @"_User"
+
+//userinfo
+#define wUserInfo @"wUserInfo"
+
+#import "MBProgressHUD.h"
+#import "UIImageView+WebCache.h"
+
+
+//微信绿
+#define WXGreen [UIColor colorWithRed:36/255.0 green:186/255.0 blue:36/255.0 alpha:1]
+
+//屏幕高
+#define kSceenHeight [UIScreen mainScreen].bounds.size.height
+//屏幕宽
+#define kSceenWidth [UIScreen mainScreen].bounds.size.width
+
+#define ShowAlert(title) {UIAlertView * alert = [[UIAlertView alloc]initWithTitle:nil message:title delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil];[alert show];}
+
+#endif /* PrefixHeader_pch */
+

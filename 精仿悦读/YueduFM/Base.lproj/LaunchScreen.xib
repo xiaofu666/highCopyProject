@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="imZ-LF-g8p">
+                    <rect key="frame" x="110" y="147" width="100" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="J6D-vU-2V9"/>
+                        <constraint firstAttribute="height" constant="100" id="VLp-Ne-6EN"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="悦读FM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3W-pk-kb3">
+                    <rect key="frame" x="8" y="249" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="TRL-Pf-hGS"/>
+                        <constraint firstAttribute="width" constant="304" id="XxK-m0-K1R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.46666666666666667" green="0.46666666666666667" blue="0.46666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倾听文字的声音" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elj-69-efA">
+                    <rect key="frame" x="8" y="270" width="304" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Gcp-To-vBy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Elj-69-efA" firstAttribute="top" secondItem="g3W-pk-kb3" secondAttribute="bottom" id="829-Cd-rYa"/>
+                <constraint firstAttribute="trailing" secondItem="Elj-69-efA" secondAttribute="trailing" constant="8" id="8w5-DJ-DdO"/>
+                <constraint firstAttribute="centerX" secondItem="imZ-LF-g8p" secondAttribute="centerX" id="CrT-PO-u8c"/>
+                <constraint firstAttribute="centerX" secondItem="g3W-pk-kb3" secondAttribute="centerX" id="YCi-Fm-h3R"/>
+                <constraint firstItem="Elj-69-efA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="ZVp-ui-MJh"/>
+                <constraint firstItem="g3W-pk-kb3" firstAttribute="top" secondItem="imZ-LF-g8p" secondAttribute="bottom" constant="2" id="nPW-YH-vHf"/>
+                <constraint firstAttribute="centerY" secondItem="imZ-LF-g8p" secondAttribute="centerY" constant="43" id="vrh-7y-HhF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="548" y="455"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="512" height="512"/>
+    </resources>
+</document>

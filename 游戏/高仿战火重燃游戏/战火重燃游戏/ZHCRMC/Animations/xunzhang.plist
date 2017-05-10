@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>frames</key>
+        <dict>
+            <key>xunzhang.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{14,22}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{14,22}}</string>
+                <key>sourceSize</key>
+                <string>{14,22}</string>
+            </dict>
+        </dict>
+        <key>metadata</key>
+        <dict>
+            <key>format</key>
+            <integer>2</integer>
+            <key>realTextureFileName</key>
+            <string>xunzhang.pvr.ccz</string>
+            <key>size</key>
+            <string>{18,26}</string>
+            <key>smartupdate</key>
+            <string>$TexturePacker:SmartUpdate:49e063943209e938bc504cc8c51e993c$</string>
+            <key>textureFileName</key>
+            <string>xunzhang.pvr.ccz</string>
+        </dict>
+    </dict>
+</plist>

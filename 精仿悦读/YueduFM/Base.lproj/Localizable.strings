@@ -1,0 +1,82 @@
+/* 
+  Localizable.strings
+  YueduFM
+
+  Created by StarNet on 10/13/15.
+  Copyright © 2015 StarNet. All rights reserved.
+*/
+
+"Skip" = "跳过";
+
+"network_connect_prompt" = "网络连接提醒";
+"network_none_prompt" = "当前无网络连接";
+"network_wifi_prompt" = "当前网络处于WiFi下, 您可以尽情的收听与下载~";
+"network_wwlan_prompt" = "当前网络处于2G/3G/4G下, 请注意流量使用情况哦~";
+
+"continue" = "继续";
+"cancel" = "取消";
+
+"favor" = "收藏";
+"unfavor" = "取消收藏";
+
+"time" = "时间";
+"none" = "关闭";
+"hour" = "小时";
+"minute" = "分钟";
+
+"clear" = "清空";
+"clear_successed" = "清空成功";
+
+"search_prompt" = "标题、作者、主播";
+
+
+"download_in_wifi" = "在WiFi时下载";
+"download_doing_prompt" = "该文章已在下载队列中";
+"download_already_prompt" = "该文章已下载";
+"download_add_prompt" = "该文章已加入下载队列中";
+"download_empty_prompt" = "下载的文章, 可离线收听.";
+"download_clear_prompt" = "您确认清空所有项目?";
+"download_done" = "已下载";
+"download_doing" = "下载中";
+"download_all_done_prompt" = "所有文章已下载完成.";
+"download_done_prompt" = "下载完成";
+"download_wwlan_prompt" = "当前网络处于2G/3G/4G模式下，继续下载会被运营商收取流量费用";
+
+"menu_playlist" = "播放队列";
+"menu_download" = "我的下载";
+"menu_favor" = "我的收藏";
+"menu_history" = "最近播放";
+"menu_settings" = "设置";
+
+"favor_empty_prompt" = "您收藏的文章都会出现在此.";
+"favor_clear_prompt" = "您确定清空已所有收藏文章?";
+
+"playlist_add_prompt" = "该文章已添加到播放队列中";
+"playlist_empty_prompt" = "所有将要播放的文章都在此.";
+"playlist_clear_prompt" = "您确定清空已所有项目?";
+"playlist_none_prompt" = "播放队列没有文章了.";
+
+"history" = "最近播放";
+"history_empty_prompt" = "已播放的文章都会出现在此.";
+"history_clear_prompt" = "您确定清空播放记录?";
+
+"main" = "悦读";
+"main_empty_prompt" = "暂无文章,请下拉刷新试试.";
+"main_update_failed_prompt" = "更新失败, 请检测网络哦";
+"main_update_newer_prompt" = "您有新的文章哦";
+"main_update_none_prompt" = "没有新的文章了";
+
+"settings_flow" = "流量";
+"settings_flow_protection" = "流量保护提醒";
+"settings_flow_protection_prompt" = "关闭提醒后，在2G/3G/4G模式下收听和下载在线文章时，将不再显示流量提醒.";
+"settings_auto_close" = "定时关闭";
+"settings_star" = "评分";
+"settings_guide" = "引导页";
+"settings_about" = "关于我们";
+"settings_version" = "版本";
+"settings_clean_space" = "清空占用空间";
+"settings_clean_picture_space_prompt" = "清空所有已经缓存的图片资源.";
+"settings_clean_picture_space" = "清空图片资源";
+"settings_clean_downloaded_space_prompt" = "清空所有已经下载的声音文件.";
+"settings_clean_downloaded_space" = "清空占用空间";
+"settings_clean_successed" = "清空完毕";

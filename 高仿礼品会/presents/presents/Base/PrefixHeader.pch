@@ -1,0 +1,121 @@
+//
+//  PrefixHeader.pch
+//  presents
+//
+//  Created by dapeng on 16/1/6.
+//  Copyright © 2016年 dapeng. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+//取消全局打印
+#if DEBUG
+#warning NSLogs will be shown
+#else
+#define NSLog(...) {}
+#endif
+
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#define RGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+
+//三方类
+#import "SAPNetWorkTool.h"
+#import "AFNetworking.h"
+#import "MJRefresh.h"
+#import <UIImageView+WebCache.h>
+#import "UIView+UIViewAdditions.h"
+#import "Carousel.h"
+#import "LunBoPic.h"
+#import "TFHpple.h"
+#import "SAKeyValueStore.h"
+#import "MBProgressHUD.h"
+//#import "UMSocial.h"
+
+//viewController
+#import "BaseViewController.h"
+#import "MineViewController.h"
+#import "ClassifyViewController.h"
+#import "HotViewController.h"
+#import "ViewController.h"
+#import "DiyViewController.h"
+#import "SearchViewController.h"
+#import "NZCHotDetialViewController.h"
+#import "PDetailViewController.h"
+#import "CarsousekNextViewController.h"
+#import "NoneIdViewController.h"
+#import "SelectArtifactViewController.h"//选礼神器
+#import "NZCMineCollectViewController.h"
+#import "PullViewController.h"
+#import "AlarmClockViewController.h"//闹钟
+#import "AddAlarmViewController.h"
+#import "AlarmTimeViewController.h"
+#import "RepeatViewController.h"
+#import "SAPPickerView.h"//pickerView
+
+
+//model
+#import "BaseModel.h"
+#import "HotModel.h"
+#import "NZCHotDetialModel.h"
+#import "CarsouselModel.h"
+#import "PresentMdoel.h"
+#import "searchModel.h"
+#import "SAPChannelsModel.h"
+#import "PullModel.h"
+#import "NZCCollectModel.h"
+#import "AlarmModel.h"
+
+
+//collectionViewCell
+#import "NZCHotCollectionViewCell.h"
+#import "PresentCollectionViewCell.h"
+#import "SelectionCollectionViewCell.h"
+#import "SearchPresentCollectionViewCell.h"
+#import "SixPictureCollectionViewCell.h"
+#import "SearchPresentCollectionViewCell.h"
+#import "SearchCollectionViewCell.h"
+#import "PullCollectionViewCell.h"
+#import "PullCollectionReusableView.h"
+#import "NZCCollectItemsCollectionViewCell.h"
+#import "GuidesCollectionCollectionViewCell.h"
+
+//tableViewCell
+#import "NZCHotDetialTableViewCell.h"
+#import "PresentTableViewCell.h"
+#import "SelectionTableView.h"
+#import "NZCHotCarouselTableViewCell.h"
+#import "NZCTextPicTableViewCell.h"
+#import "NZCTextPicTableViewCell.h"
+#import "ChannelsTableViewCell.h"
+#import "SearchTableViewCell.h"
+#import "AlarmTableViewCell.h"
+
+
+
+
+
+
+
+
+//URL
+#define scrollButtonTitle @"http://api.liwushuo.com/v2/channels/preset?gender=1&generation=1"
+#define CarouselURL @"http://api.liwushuo.com/v2/banners?channel=iOS"
+#define PresentURL @"http://api.liwushuo.com/v2/channels/100/items?ad=1&gender=1&generation=1&limit=20&offset=0"
+#define carouselNextURL @"http://api.liwushuo.com/v2/collections/180/posts?gender=1&generation=0&limit=20&offset=0"
+#define kStrategySpecialURL @"http://api.liwushuo.com/v2/collections?limit=6&offset=0"
+#define kStrategyButtonURL @"http://api.liwushuo.com/v2/channel_groups/all"
+#define kGiftURL @"http://api.liwushuo.com/v2/item_categories/tree"
+#define scrollButton @"http://api.liwushuo.com/v2/secondary_banners?gender=1&generation=0"//轮播图下按钮
+#define selectShenqi @"http://api.liwushuo.com/v2/search/item_by_type?limit=20&offset=0"//选礼神器
+
+//相对高
+#define XHIGHT [UIScreen mainScreen].bounds.size.height/667
+//相对宽
+#define XWIDTH [UIScreen mainScreen].bounds.size.width/375
+
+#endif /* PrefixHeader_pch */

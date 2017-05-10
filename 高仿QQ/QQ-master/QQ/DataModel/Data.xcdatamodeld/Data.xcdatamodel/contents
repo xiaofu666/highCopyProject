@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="14F27" minimumToolsVersion="Xcode 7.0">
+    <entity name="Buddy" representedClassName="WSBuddyModel" syncable="YES">
+        <attribute name="headImageURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastSignature" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="onLineState" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="group" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BuddyGroup" inverseName="buddys" inverseEntity="BuddyGroup" syncable="YES"/>
+    </entity>
+    <entity name="BuddyGroup" representedClassName="WSBuddyGroupModel" syncable="YES">
+        <attribute name="groupName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hide" optional="YES" transient="YES" attributeType="Boolean" defaultValueString="YES" syncable="YES"/>
+        <attribute name="onLineCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="totalCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="buddys" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Buddy" inverseName="group" inverseEntity="Buddy" syncable="YES"/>
+    </entity>
+    <entity name="MsgHistory" representedClassName="WSChatModel" syncable="YES">
+        <attribute name="chatCellType" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="headImageURL_sender" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="height" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="isSender" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="secondVoice" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="sendingImage" optional="YES" attributeType="Transformable" valueTransformerName="UIImageToDataTransformer" syncable="YES"/>
+        <attribute name="timeStamp" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BuddyGroup" positionX="-63" positionY="54" width="128" height="120"/>
+        <element name="Buddy" positionX="-324" positionY="-162" width="128" height="135"/>
+        <element name="MsgHistory" positionX="-488" positionY="6" width="128" height="165"/>
+    </elements>
+</model>

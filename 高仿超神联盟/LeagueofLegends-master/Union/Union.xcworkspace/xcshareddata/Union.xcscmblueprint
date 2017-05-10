@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "711D88850BE14F945B05BFB5978A0E328CDDD4FB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "711D88850BE14F945B05BFB5978A0E328CDDD4FB" : 0,
+    "A2FD71608B739CEA77E85489C78AEE5DF2D39203" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "02F9CC1E-09AC-4460-81EB-F423927F1945",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "711D88850BE14F945B05BFB5978A0E328CDDD4FB" : "LeagueofLegends\/",
+    "A2FD71608B739CEA77E85489C78AEE5DF2D39203" : "Union"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Union",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Union\/Union.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/HarrisHan\/LeagueofLegends.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "711D88850BE14F945B05BFB5978A0E328CDDD4FB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/Apple_lee\/Union.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A2FD71608B739CEA77E85489C78AEE5DF2D39203"
+    }
+  ]
+}

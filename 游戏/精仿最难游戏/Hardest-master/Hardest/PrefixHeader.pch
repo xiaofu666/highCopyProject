@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  Hardest
+//
+//  Created by 维尼的小熊 on 16/2/24.
+//  Copyright © 2016年 维尼的小熊. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+/* NSNotificationNames */
+#define LaunchAnimationDidFinish @"LaunchAnimationDidFinish"
+#define kNotificationNameGameViewControllerDelloc @"kNotificationNameGameViewControllerDelloc"
+
+#define kAuthorGithubURLString @"https://github.com/ZhongTaoTian"
+#define kAuthorSineWeiBoUrlString @"http://weibo.com/tianzhongtao"
+#define kAuthorBlogURLString @"http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
+
+#define kPauseViewControllerClickBackToMainViewController @"kPauseViewControllerClickBackToMainViewController"
+
+/* Font */
+#define kFontSize 70
+
+/* common */
+#define iPhone5 ([[UIScreen mainScreen] bounds].size.height == 568 || [[UIScreen mainScreen] bounds].size.height == 1136)
+#define ScreenHeightDifference ((568 - 480) * 0.5)
+#define ScreenBounds [UIScreen mainScreen].bounds
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+/* OTHER */
+#define kCountStartX(WIDTH) (ScreenWidth - WIDTH) * 0.5
+
+/* RUL */
+#define kBlogURL @"http://www.jianshu.com/users/5fe7513c7a57/latest_articles"
+#define kWeiBoURL @"http://weibo.com/tianzhongtao"
+#define kGithubUrl @"https://github.com/ZhongTaoTian"
+
+#ifdef DEBUG
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...)
+#endif
+
+/* import Class */
+#import "UIView+WNXImage.h"
+#import "WNXSoundToolManager.h"
+#import "WNXBackViewController.h"
+#import "WNXFullBackgroundView.h"
+#import "WNXStage.h"
+
+/* import Macro */
+
+
+#endif /* PrefixHeader_pch */

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="helloPage.png" translatesAutoresizingMaskIntoConstraints="NO" id="NUH-uE-sH0">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NUH-uE-sH0" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="D8c-be-edo"/>
+                            <constraint firstItem="NUH-uE-sH0" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="ckz-Gd-gi7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NUH-uE-sH0" secondAttribute="trailing" constant="-20" id="h8o-bV-8Th"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="NUH-uE-sH0" secondAttribute="bottom" id="j0i-49-q6S"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NUH-uE-sH0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="j0i-49-q6S"/>
+                                <exclude reference="D8c-be-edo"/>
+                                <exclude reference="ckz-Gd-gi7"/>
+                                <exclude reference="h8o-bV-8Th"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NUH-uE-sH0"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="j0i-49-q6S"/>
+                                <include reference="D8c-be-edo"/>
+                                <include reference="ckz-Gd-gi7"/>
+                                <include reference="h8o-bV-8Th"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="356"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="helloPage.png" width="1080" height="1920"/>
+    </resources>
+</document>

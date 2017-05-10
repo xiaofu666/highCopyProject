@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SmartbiAdaLoginQQViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41J-Mu-fDw">
+                    <rect key="frame" x="0.0" y="100" width="600" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="8cf-Y5-1qE"/>
+                    </constraints>
+                    <state key="normal" title="QQ登录">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginQQ:" destination="-1" eventType="touchUpInside" id="Uiv-k3-RaJ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zp-n2-kfi">
+                    <rect key="frame" x="0.0" y="285" width="600" height="30"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="fjk-bm-QkO"/>
+                    </constraints>
+                    <state key="normal" title="返回">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="back:" destination="-1" eventType="touchUpInside" id="3nq-dV-cH2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="41J-Mu-fDw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6h0-RM-Tju"/>
+                <constraint firstAttribute="trailing" secondItem="3zp-n2-kfi" secondAttribute="trailing" id="Bv1-ju-BEX"/>
+                <constraint firstItem="3zp-n2-kfi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gxa-BP-Elt"/>
+                <constraint firstAttribute="trailing" secondItem="41J-Mu-fDw" secondAttribute="trailing" id="ZlW-UD-40p"/>
+                <constraint firstItem="41J-Mu-fDw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="efF-52-rkf"/>
+                <constraint firstAttribute="centerY" secondItem="3zp-n2-kfi" secondAttribute="centerY" id="pTx-se-FlX"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

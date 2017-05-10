@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "E80D5405ACADF95349452864C69120AFF851D27A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "E80D5405ACADF95349452864C69120AFF851D27A" : 0,
+    "5F97AB22AF29556B461F0AB9D0F77FCB27632FBF" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3CAD165A-138A-49A4-A94B-F576FDBA1FA4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "E80D5405ACADF95349452864C69120AFF851D27A" : "%E9%AB%98%E4%BB%BF%E7%99%BE%E5%BA%A6%E7%B3%AF%E7%B1%B3\/",
+    "5F97AB22AF29556B461F0AB9D0F77FCB27632FBF" : "nuomi"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "nuomi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "nuomi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/lookingstars\/nuomi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5F97AB22AF29556B461F0AB9D0F77FCB27632FBF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xiaofu666\/baiduNuomi.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "E80D5405ACADF95349452864C69120AFF851D27A"
+    }
+  ]
+}

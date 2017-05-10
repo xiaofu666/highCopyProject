@@ -1,0 +1,115 @@
+//
+//  RecommendHttpTool.m
+//  DoubanWorlds
+//
+//  Created by LYoung on 15/12/23.
+//  Copyright © 2015年 LYoung. All rights reserved.
+//
+
+#import "RecommendHttpTool.h"
+#import "RecommendModel.h"
+#import "HotCityModel.h"
+
+@implementation RecommendHttpTool
+
+#pragma mark - 获取活动列表(get请求
++(void)getRecommendList:(NSInteger)startNum loc:(NSString *)loc type:(NSString *)type arrayBlock:(ArrayBlock)arrayBlock{
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@?start=%ld&loc=%@&count=10&type=%@",Recommend_URL,startNum,loc,type];
+    NSLog(@"RecommendListURL = %@",urlString);
+    [HttpTools getWithURL:urlString params:nil success:^(id json) {
+//        NSLog(@"getRecommendList = %@",json);
+        NSMutableArray *resultArr = [[NSMutableArray alloc] init];
+        if ([json[@"events"] isKindOfClass:[NSArray class]]) {
+            NSArray *resArray = json[@"events"];
+            for (NSDictionary *dict in resArray) {
+                RecommendModel *model = [[RecommendModel alloc] initWithDictionary:dict];
+                [resultArr addObject:model];
+            }
+        }
+        if (arrayBlock) {
+            arrayBlock(resultArr);
+        }
+    } failure:^(NSError *error) {
+        [SVProgressHUDManager networkError];
+    }];
+}
+
++(void)getChinaCityInfo:(CityInfoBlock)cityInfoBlock{
+    
+    //1.所有分区对应的字典
+    NSString *inlandPlistURL = [[NSBundle mainBundle] pathForResource:@"inLandCityGroup" ofType:@"plist"];
+    NSDictionary *cityGroupDic = [[NSDictionary alloc] initWithContentsOfFile:inlandPlistURL];
+    
+    //2.所有分区
+    NSArray *sections = [cityGroupDic allKeys];
+    sections = [sections sortedArrayUsingSelector:@selector(compare:)]; // 对该数组里边的元素进行升序排序
+    //3.所有城市
+    NSArray *indexs = [cityGroupDic allValues];
+    
+    if (cityInfoBlock) {
+        cityInfoBlock(cityGroupDic,sections,indexs);
+    }
+}
+
++(void)getOverseasCityInfo:(CityInfoBlock)cityInfoBlock{
+    
+    //1.所有分区对应的字典
+    NSString *inlandPlistURL = [[NSBundle mainBundle] pathForResource:@"outLandCityGroup" ofType:@"plist"];
+    NSDictionary *cityGroupDic = [[NSDictionary alloc] initWithContentsOfFile:inlandPlistURL];
+    
+    //2.所有分区
+    NSArray *sections = [cityGroupDic allKeys];
+    sections = [sections sortedArrayUsingSelector:@selector(compare:)]; // 对该数组里边的元素进行升序排序
+    //3.所有城市
+    NSArray *indexs = [cityGroupDic allValues];
+    
+    if (cityInfoBlock) {
+        cityInfoBlock(cityGroupDic,sections,indexs);
+    }
+}
+
++(void)getHotCitiesInfo:(ArrayBlock)arrayBlock{
+    NSLog(@"getHotCitiesInfoURL = %@",HotCities_URL);
+    //1.所有分区对应的字典
+    NSString *inlandPlistURL = [[NSBundle mainBundle] pathForResource:@"hotcityCode" ofType:@"plist"];
+    NSArray *hotCityArr = [[NSArray alloc] initWithContentsOfFile:inlandPlistURL];
+    NSMutableArray *resultArr = [[NSMutableArray alloc] init];
+    for (NSDictionary *dict in hotCityArr) {
+        HotCityModel *model = [[HotCityModel alloc] initWithDictionary:dict];
+        [resultArr addObject:model];
+    }
+    if (arrayBlock) {
+        arrayBlock(resultArr);
+    }
+}
+
++(void)getActivityInfo:(NSString *)activityID activityBlock:(ActivityBlock)activityBlock{
+    
+    NSString *urlString = [NSString stringWithFormat:@"%@%@",ActivityInfo_URL,activityID];
+    NSLog(@"getActivityInfoURL = %@",urlString);
+    
+    [HttpTools getWithURL:urlString params:nil success:^(id json) {
+
+        if ([json isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *resDic = json;
+            RecommendModel *model = [[RecommendModel alloc] initWithDictionary:resDic];
+            if (activityBlock) {
+                activityBlock(model);
+            }
+        }
+        if (activityBlock) {
+            activityBlock([[RecommendModel alloc] init]);
+        }
+    } failure:^(NSError *error) {
+        [SVProgressHUDManager networkError];
+    }];
+
+}
+
+
+
+@end
+// 版权属于原作者
+// http://code4app.com (cn) http://code4app.net (en)
+// 发布代码于最专业的源码分享网站: Code4App.com

@@ -1,0 +1,27 @@
+dependencies: \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveDisCountViewController.m \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveDisCountViewController.h \
+  /Users/kengsir/Desktop/yiluxiangxi/RequestModel.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveLabelCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveUserImageCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveCloseCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/Path.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/UIImageView+WebCache.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageCompat.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManagerDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageManager.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDWebImageDownloaderDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SDWebImage/SDImageCacheDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleDetailHeaderView.h \
+  /Users/kengsir/Desktop/yiluxiangxi/yiluxiangxi/AppDelegate.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveCloseFirstCell.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFHTTPRequestOperationManager.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFHTTPRequestOperation.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFURLConnectionOperation.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFSecurityPolicy.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFURLResponseSerialization.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFURLRequestSerialization.h \
+  /Users/kengsir/Desktop/yiluxiangxi/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SSZipArchive/SSZipArchive.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SSZipArchive/Common.h \
+  /Users/kengsir/Desktop/yiluxiangxi/SleeveHtmlWebController.h
