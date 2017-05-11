@@ -6,7 +6,7 @@
 //  Copyright © 2016年 Sunnyyoung. All rights reserved.
 //
 
-#import <HMSegmentedControl/HMSegmentedControl.h>
+#import "HMSegmentedControl.h"
 
 @interface MeiziCategoryMenuView : HMSegmentedControl
 

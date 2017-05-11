@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SYPhotoBrowser.h"
-#import <HMSegmentedControl/HMSegmentedControl.h>
+#import "HMSegmentedControl.h"
 
 @interface MeiziViewController : UIViewController
 

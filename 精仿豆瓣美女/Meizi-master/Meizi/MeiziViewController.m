@@ -12,8 +12,9 @@
 #import "MeiziCell.h"
 #import "Meizi.h"
 #import "AppDelegate.h"
+ #import "SDPhotoBrowserConfig.h"
 
-@interface MeiziViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+@interface MeiziViewController () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,SDPhotoBrowserDelegate>
 
 @property (weak, nonatomic) IBOutlet MeiziCategoryMenuView *cagegoryMenu;
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
@@ -92,7 +93,7 @@
 }
 
 - (void)loadMoreMeizi {
-    [MeiziRequest requestWithPage:self.page meiziType:self.type+1 success:^(NSArray<Meizi *> *meiziArray) {
+    [MeiziRequest requestWithPage:self.page+1 meiziType:self.type success:^(NSArray<Meizi *> *meiziArray) {
         [self.collectionView.mj_footer endRefreshing];
         [self reloadDataWithMeiziArray:meiziArray emptyBeforeReload:NO];
     } failure:^(NSString *message) {
@@ -151,20 +152,49 @@
 #pragma mark - CollectionView Delegate
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSMutableArray *photoTitleArray = [NSMutableArray array];
+    for (Meizi *meizi in self.meiziArray) {
+        [photoTitleArray addObject:meizi.title];
+    }
+//    SYPhotoBrowser *photoBrowser = [[SYPhotoBrowser alloc] initWithImageSourceArray:photoURLArray caption:nil delegate:self];
+//    photoBrowser.enableStatusBarHidden = NO;
+//    photoBrowser.pageControlStyle = SYPhotoBrowserPageControlStyleLabel;
+//    [((AppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController presentViewController:photoBrowser animated:YES completion:nil];
+    
+    SDPhotoBrowser *photoBrowser = [SDPhotoBrowser new];
+    photoBrowser.delegate = self;
+    photoBrowser.currentImageIndex = indexPath.item;
+    photoBrowser.imageCount = self.meiziArray.count;
+    photoBrowser.titleArray = photoTitleArray;
+    photoBrowser.sourceImagesContainerView = collectionView;
+    [photoBrowser show];
+}
+#pragma mark  SDPhotoBrowserDelegate
+
+// 返回临时占位图片（即原来的小图）
+- (UIImage *)photoBrowser:(SDPhotoBrowser *)browser placeholderImageForIndex:(NSInteger)index
+{
+    NSLog(@"UIImage=%ld",index);
+    // 不建议用此种方式获取小图，这里只是为了简单实现展示而已
+//    UIImageView *cell = (UIImageView *)[self.view viewWithTag:index+10];
+    MeiziCell *cell = (MeiziCell *)[self collectionView:self.collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForItem:index inSection:0]];
+    return cell.imageView.image;
+    
+}
+// 返回高质量图片的url
+- (NSURL *)photoBrowser:(SDPhotoBrowser *)browser highQualityImageURLForIndex:(NSInteger)index
+{
     NSMutableArray *photoURLArray = [NSMutableArray array];
     for (Meizi *meizi in self.meiziArray) {
         [photoURLArray addObject:meizi.src];
     }
-    SYPhotoBrowser *photoBrowser = [[SYPhotoBrowser alloc] initWithImageSourceArray:photoURLArray caption:nil delegate:self];
-    photoBrowser.enableStatusBarHidden = NO;
-    photoBrowser.pageControlStyle = SYPhotoBrowserPageControlStyleLabel;
-    [((AppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController presentViewController:photoBrowser animated:YES completion:nil];
+    NSString *urlStr = photoURLArray[index];
+    return [NSURL URLWithString:urlStr];
 }
-
 #pragma mark - Property method
 
 - (UICollectionView *)collectionView {
-    if (_collectionView.mj_footer == nil) {
+    if (_collectionView.mj_header == nil) {
         MJRefreshNormalHeader *header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(refreshMeizi)];
         header.automaticallyChangeAlpha = YES;
         _collectionView.mj_header = header;

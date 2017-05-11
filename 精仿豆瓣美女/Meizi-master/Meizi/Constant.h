@@ -9,7 +9,7 @@
 #ifndef Meizi_Constant_h
 #define Meizi_Constant_h
 
-#define kScreenWidth    CGRectGetWidth([UIApplication   sharedApplication].keyWindow.bounds)
+#define kScreenWidth     CGRectGetWidth ([UIApplication sharedApplication].keyWindow.bounds)
 #define kScreenHeight    CGRectGetHeight([UIApplication sharedApplication].keyWindow.bounds)
 
 static NSString * const BaseURL         = @"http://www.dbmeinv.com";

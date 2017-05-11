@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		1E7640931594AFCAB0916F13 /* Pods_Meizi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E22DBEA73CE361DFD593DA31 /* Pods_Meizi.framework */; };
+		48C780291EC43EFC002E0092 /* HMSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C780281EC43EFC002E0092 /* HMSegmentedControl.m */; };
+		48C780321EC4403C002E0092 /* SDBrowserImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C7802C1EC4403C002E0092 /* SDBrowserImageView.m */; };
+		48C780331EC4403C002E0092 /* SDPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C7802E1EC4403C002E0092 /* SDPhotoBrowser.m */; };
+		48C780341EC4403C002E0092 /* SDWaitingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48C780311EC4403C002E0092 /* SDWaitingView.m */; };
 		48DF509A1CF53B8100EC9B86 /* UIImageView+UIActivityIndicatorForSDWebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF50991CF53B8100EC9B86 /* UIImageView+UIActivityIndicatorForSDWebImage.m */; };
 		48DF50A21CF53C4300EC9B86 /* SYPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF509D1CF53C4300EC9B86 /* SYPhotoBrowser.m */; };
 		48DF50A31CF53C4300EC9B86 /* SYPhotoBrowserCaptionLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48DF509F1CF53C4300EC9B86 /* SYPhotoBrowserCaptionLabel.m */; };
@@ -35,6 +39,15 @@
 
 /* Begin PBXFileReference section */
 		3C9EAFCE704385C25D809FBC /* Pods-Meizi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Meizi.release.xcconfig"; path = "Pods/Target Support Files/Pods-Meizi/Pods-Meizi.release.xcconfig"; sourceTree = "<group>"; };
+		48C780271EC43EFC002E0092 /* HMSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMSegmentedControl.h; sourceTree = "<group>"; };
+		48C780281EC43EFC002E0092 /* HMSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HMSegmentedControl.m; sourceTree = "<group>"; };
+		48C7802B1EC4403C002E0092 /* SDBrowserImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBrowserImageView.h; sourceTree = "<group>"; };
+		48C7802C1EC4403C002E0092 /* SDBrowserImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBrowserImageView.m; sourceTree = "<group>"; };
+		48C7802D1EC4403C002E0092 /* SDPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowser.h; sourceTree = "<group>"; };
+		48C7802E1EC4403C002E0092 /* SDPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDPhotoBrowser.m; sourceTree = "<group>"; };
+		48C7802F1EC4403C002E0092 /* SDPhotoBrowserConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDPhotoBrowserConfig.h; sourceTree = "<group>"; };
+		48C780301EC4403C002E0092 /* SDWaitingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWaitingView.h; sourceTree = "<group>"; };
+		48C780311EC4403C002E0092 /* SDWaitingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWaitingView.m; sourceTree = "<group>"; };
 		48DF50981CF53B8100EC9B86 /* UIImageView+UIActivityIndicatorForSDWebImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+UIActivityIndicatorForSDWebImage.h"; sourceTree = "<group>"; };
 		48DF50991CF53B8100EC9B86 /* UIImageView+UIActivityIndicatorForSDWebImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+UIActivityIndicatorForSDWebImage.m"; sourceTree = "<group>"; };
 		48DF509C1CF53C4300EC9B86 /* SYPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYPhotoBrowser.h; sourceTree = "<group>"; };
@@ -105,6 +118,29 @@
 				E22DBEA73CE361DFD593DA31 /* Pods_Meizi.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48C780261EC43EFC002E0092 /* HMSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				48C780271EC43EFC002E0092 /* HMSegmentedControl.h */,
+				48C780281EC43EFC002E0092 /* HMSegmentedControl.m */,
+			);
+			path = HMSegmentedControl;
+			sourceTree = "<group>";
+		};
+		48C7802A1EC4403C002E0092 /* SDPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				48C7802B1EC4403C002E0092 /* SDBrowserImageView.h */,
+				48C7802C1EC4403C002E0092 /* SDBrowserImageView.m */,
+				48C7802D1EC4403C002E0092 /* SDPhotoBrowser.h */,
+				48C7802E1EC4403C002E0092 /* SDPhotoBrowser.m */,
+				48C7802F1EC4403C002E0092 /* SDPhotoBrowserConfig.h */,
+				48C780301EC4403C002E0092 /* SDWaitingView.h */,
+				48C780311EC4403C002E0092 /* SDWaitingView.m */,
+			);
+			path = SDPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		48DF509B1CF53C4300EC9B86 /* SYPhotoBrowser */ = {
@@ -278,6 +314,8 @@
 			isa = PBXGroup;
 			children = (
 				7D93B8761ACFDA1F00453452 /* Constant.h */,
+				48C7802A1EC4403C002E0092 /* SDPhotoBrowser */,
+				48C780261EC43EFC002E0092 /* HMSegmentedControl */,
 				48DF509B1CF53C4300EC9B86 /* SYPhotoBrowser */,
 				7D760CBD1CAE81FF009A295C /* SYNetwork */,
 			);
@@ -405,13 +443,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C780341EC4403C002E0092 /* SDWaitingView.m in Sources */,
+				48C780331EC4403C002E0092 /* SDPhotoBrowser.m in Sources */,
 				48DF50A41CF53C4300EC9B86 /* SYPhotoViewController.m in Sources */,
 				7D93B87C1ACFDD2900453452 /* Meizi.m in Sources */,
+				48C780321EC4403C002E0092 /* SDBrowserImageView.m in Sources */,
 				7D75F98F1CAF5EFE00D703E3 /* SYNetworkManager.m in Sources */,
 				7D75F9901CAF5EFE00D703E3 /* SYBatchRequest.m in Sources */,
 				7D75F9921CAF5EFE00D703E3 /* SYChainRequest.m in Sources */,
 				7D75F98B1CAF5EFE00D703E3 /* SYNetworkUtil.m in Sources */,
 				7D4375E21B54FB72001CEBC9 /* MeiziViewController.m in Sources */,
+				48C780291EC43EFC002E0092 /* HMSegmentedControl.m in Sources */,
 				7D93B8521ACFD7CF00453452 /* AppDelegate.m in Sources */,
 				7D75F98D1CAF5EFE00D703E3 /* SYNetworkCacheManager.m in Sources */,
 				48DF50A21CF53C4300EC9B86 /* SYPhotoBrowser.m in Sources */,
